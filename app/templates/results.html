@@ -1,17 +1,27 @@
 {% extends 'base.html' %}
 
 {% block body %}
-    {% if password_number == 1 %}
-    <p>
-        Generated Password: <br />
-        {{ password }}
-    </p>
-    {% else %}
-    <p>
-        Generated Passwords: <br />
-        {% for pass in password %}
-            {{ pass }} <br />
-        {% endfor %}
-    </p>
-    {% endif %}
+    <div class="container">
+        <hr />
+
+        {% if password_number == 1 %}
+            <p>
+                <p class="h2"> Generated Password: </p> <br />
+                {{ password }}
+            </p>
+            {% else %}
+            <p>
+                <p class="h2"> Generated Passwords: </p> <br />
+                <table class="table table-striped">
+                    <tbody>
+                        {% for pass in password %}
+                            <tr>
+                                <td> {{ pass }} </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </p>
+        {% endif %}
+    </div>
 {% endblock %}
