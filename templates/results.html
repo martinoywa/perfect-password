@@ -3,11 +3,15 @@
 {% block body %}
     {% if password_number == 1 %}
     <p>
-        Generated Password:
+        Generated Password: <br />
         {{ password }}
     </p>
     {% else %}
-        Generated Passwords:
-        {{ password }}
+    <p>
+        Generated Passwords: <br />
+        {% for pass in password %}
+            {{ pass }} <br />
+        {% endfor %}
+    </p>
     {% endif %}
 {% endblock %}
