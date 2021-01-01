@@ -1,10 +1,10 @@
-from flask import Flask, render_template, request
+from flask import Blueprint, render_template, request
+from app.generator import generate_password, multiple_passwords
 
-from generator import generate_password, multiple_passwords
 
-app = Flask(__name__)
+main = Blueprint("main", __name__)
 
-@app.route("/", methods=["GET", "POST"])
+@main.route("/", methods=["GET", "POST"])
 def home():
     if request.method == "GET":
         return render_template("index.html")
@@ -22,7 +22,3 @@ def home():
                                                  password_length)
             return render_template("results.html", password=password_list,
                                    password_number=password_number)
-
-
-if __name__ == "__main__":
-    app.run(debug=True)
