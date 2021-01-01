@@ -1,0 +1,11 @@
+certifi==2020.12.5
+chardet==4.0.0
+idna==2.10
+peewee==3.13.3
+requests==2.25.1
+sentry-sdk==0.19.4
+six==1.15.0
+spotify-dl==7.3.0
+spotipy==2.16.0
+urllib3==1.26.2
+youtube-dl==2020.12.31
