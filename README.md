@@ -10,7 +10,7 @@ tend to ask their users to create new password over and over, and they require
 that the new passwords are unique everytime.
 
 Coming up with a new password that's unique is not easy, hence why most people
-always gravitate towards reusing them. Perfec Password  is a stand alone and
+always gravitate towards reusing them. Perfect Password  is a stand alone and
 minimalistic utility that can help users deal with this, by simply asking the
 user how long they want their passwords to be, and how many passwords a user
 wants to generate.
@@ -20,6 +20,10 @@ their own built in password managers that most users are already familiar with a
 tend to always use. So instead of building a fully functional password manager and
 generator, I decided to stick to just a single functinoality, that will not extremely
 alter a users mental model.
+
+All character types from lower case and upper case letters, punctuation marks, to 
+digits will most like be included in your new password, thus passing the standard
+password rules that require a password to include them.
 
 # How to use
 - Visit https://perfectpassword.azurewebsites.net/.
