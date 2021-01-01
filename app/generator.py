@@ -35,18 +35,3 @@ def multiple_passwords(number_of_passwords, password_length):
     password_list = [generate_password(password_length) for i in range(number_of_passwords)]
     return password_list
 
-
-if __name__ == "__main__":
-    length = 8
-    print(generate_password(length))
-
-    length = 16
-    password_number = 3
-    print(multiple_passwords(password_number, length))
-
-    length = 16
-    print(generate_password(length))
-
-    length = 8
-    password_number = 2
-    print(multiple_passwords(password_number, length))
