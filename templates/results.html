@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    {% if password_number == 1 %}
+    <p>
+        Generated Password:
+        {{ password }}
+    </p>
+    {% else %}
+        Generated Passwords:
+        {{ password }}
+    {% endif %}
+{% endblock %}

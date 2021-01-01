@@ -1,15 +1,11 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Perfect Password</title>
-</head>
-<body>
-    <p>
-        Perfect Password
-    </p>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block body %}
+    <form method="POST">
+        <input type="number" placeholder="password length" name="password_length"
+            value="16"> * Recommended length is 16
+        <input type="number" placeholder="number of passwords" name="password_number"
+            value="1">
+        <button type="submit">Generate</button>
+    </form>
+{% endblock %}
